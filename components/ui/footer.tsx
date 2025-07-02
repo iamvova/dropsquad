@@ -47,7 +47,7 @@ export default function Footer() {
                 <li>
                   <a
                     className="flex items-center justify-center text-indigo-500 transition hover:text-indigo-400"
-                    href="https://t.me/drop_squad"
+                    href="https://t.me/+XhChqRALwudhNDFi"
                     aria-label="TG"
                   >
                     
