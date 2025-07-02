@@ -3,16 +3,14 @@
 import { useState } from "react";
 import useMasonry from "@/utils/useMasonry";
 import Image, { StaticImageData } from "next/image";
-import TestimonialImg01 from "@/public/images/testimonial-01.jpg";
-import TestimonialImg02 from "@/public/images/testimonial-02.jpg";
-import TestimonialImg03 from "@/public/images/testimonial-03.jpg";
-import TestimonialImg04 from "@/public/images/testimonial-04.jpg";
-import TestimonialImg05 from "@/public/images/testimonial-05.jpg";
-import TestimonialImg06 from "@/public/images/testimonial-06.jpg";
-import TestimonialImg07 from "@/public/images/testimonial-07.jpg";
-import TestimonialImg08 from "@/public/images/testimonial-08.jpg";
-import TestimonialImg09 from "@/public/images/testimonial-09.jpg";
-import ClientImg01 from "@/public/images/client-logo-01.svg";
+import TestimonialImg01 from "@/public/images/Blue.png";
+import TestimonialImg02 from "@/public/images/Cyan.png";
+import TestimonialImg03 from "@/public/images/Green.png";
+import TestimonialImg04 from "@/public/images/Orange.png";
+import TestimonialImg05 from "@/public/images/Pink.png";
+import TestimonialImg06 from "@/public/images/Purple.png";
+import TestimonialImg07 from "@/public/images/Red.png";
+import ClientImg01 from "@/public/images/Blue.png";
 import ClientImg02 from "@/public/images/client-logo-02.svg";
 import ClientImg03 from "@/public/images/client-logo-03.svg";
 import ClientImg04 from "@/public/images/client-logo-04.svg";
@@ -25,8 +23,7 @@ import ClientImg09 from "@/public/images/client-logo-09.svg";
 const testimonials = [
   {
     img: TestimonialImg01,
-    clientImg: ClientImg01,
-    name: "MaKayla P.",
+    name: "@wakexp",
     company: "Спекуляції",
     content:
       "Усього за перші 10 днів активної спекулятивної торгівлі на біржах MEXC та GATE наша команда досягла прибутковості понад 980%. Завдяки швидкому аналізу ринку, точним входам і командній координації нам вдалося ефективно використати волатильність альткоїнів на ранніх етапах.",
@@ -34,8 +31,7 @@ const testimonials = [
   },
   {
     img: TestimonialImg02,
-    clientImg: ClientImg02,
-    name: "Andrew K.",
+    name: "@V_N_Y_R",
     company: "Perp",
     content:
       "Ми активно працюємо з топовими PERP і DEX-проєктами, такими як Arkham, Backpack та Paradex, з фокусом на потенційні дропи. Наша команда бере участь у трейдинговій активності, тестує функціонал платформ і виконує всі необхідні умови, щоб максимально ефективно фармити майбутні airdrop-нагороди.",
@@ -43,8 +39,7 @@ const testimonials = [
   },
   {
     img: TestimonialImg03,
-    clientImg: ClientImg03,
-    name: "Lucy D.",
+    name: "@v.pndk",
     company: "Тестнети",
     content:
       "На проєкті Space and Time нам вдалося отримати понад $3,500 виключно з безкоштовної активності, без жодних фінансових вкладень. Ми виконували завдання, брали участь у тестнет-кампаніях і взаємодіяли з екосистемою на ранніх етапах, що дозволило нам максимально ефективно зафармити дроп без витрат. Це ще раз доводить, що грамотна стратегія та своєчасна участь у Free-активностях може приносити реальний прибуток.",
@@ -52,8 +47,7 @@ const testimonials = [
   },
   {
     img: TestimonialImg04,
-    clientImg: ClientImg04,
-    name: "Pavel M.",
+    name: "@V_N_Y_R",
     company: "Фючерсна торгівля",
     content:
       "Трейдинг може бути безпечним за умови грамотного підходу — саме це підтверджує наш результат: +39% прибутку без зайвого ризику. Ми діяли обережно, дотримуючись чіткої стратегії, що дозволило стабільно заробити без надмірних коливань.",
@@ -61,8 +55,7 @@ const testimonials = [
   },
   {
     img: TestimonialImg05,
-    clientImg: ClientImg05,
-    name: "Miriam E.",
+    name: "@V_o_l_o_d_y_m_y_r_T",
     company: "Forex трейдинг",
     content:
       "У нашій команді є топові трейдери з досвідом не лише на крипторинку, а й у класичних фінансових інструментах, зокрема Forex. Щодня в нашому Telegram-каналі з’являється безкоштовна аналітика, де ділимось ключовими рівнями, торговими ідеями та актуальними ринковими оглядами — все для того, щоб допомогти спільноті приймати обґрунтовані рішення.",
@@ -70,8 +63,7 @@ const testimonials = [
   },
   {
     img: TestimonialImg06,
-    clientImg: ClientImg06,
-    name: "Eloise V.",
+    name: "@V_N_Y_R",
     company: "Ретродропи",
     content:
       "Ми також активно працюємо з ретро активностями, що дозволяють отримувати винагороди за минулу активність. Одні з останніх успішних кейсів — Sophon та Reddio, де можна було спокійно заробити від $100 до $300 на один акаунт. Наша команда вчасно відстежує подібні можливості та ділиться ними у нашому Dashboard, щоб кожен мав шанс отримати максимум з потенційних дропів.",
@@ -79,26 +71,24 @@ const testimonials = [
   },
   {
     img: TestimonialImg07,
-    clientImg: ClientImg07,
-    name: "Pierre-Gilles L.",
+    name: "@wakexp",
     company: "Binance",
     content:
       "Завдяки активній участі в промо-кампаніях Binance наша команда змогла заробити понад $2500/акк. Ми залучали нових користувачів, брали участь у трейдингових подіях та отримували бонуси за участь у промо акціях — усе це стало результатом злагодженої роботи та стратегічного підходу.",
     categories: [1, 2, 4],
   },
   {
-    img: TestimonialImg08,
-    clientImg: ClientImg08,
-    name: "Danielle K.",
+    img: TestimonialImg01,
+    name: "@VolterGared",
     company: "Node",
     content:
       "Наша команда також активно займається підтримкою нод, беручи участь у ранніх етапах перспективних блокчейн-проєктів. Ми розраховуємо на майбутні дропи за внесок у децентралізацію мереж, адже віримо, що участь у таких ініціативах — це не лише підтримка екосистеми, а й стратегічна можливість отримати значні винагороди.",
     categories: [1, 5],
   },
   {
-    img: TestimonialImg09,
-    clientImg: ClientImg09,
-    name: "Mary P.",
+    img: TestimonialImg02,
+    // clientImg: ClientImg09,
+    name: "@v.pndk",
     company: "Арбітраж",
     content:
       "Наша команда активно займається арбітражем між DEX і CEX, використовуючи цінові розбіжності одного й того ж активу на різних біржах. Це дозволяє купувати дешевше на одній платформі та продавати дорожче на іншій, отримуючи швидкий прибуток.",
